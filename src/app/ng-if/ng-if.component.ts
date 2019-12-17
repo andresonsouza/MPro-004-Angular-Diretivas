@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NgIfComponent implements OnInit {
 
   showName = false;
-  showAddres = false;
+  showAddress = false;
   showPhone = false;
   showAge = false;
 

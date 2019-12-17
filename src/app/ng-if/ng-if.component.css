@@ -1,8 +1,4 @@
-input {
-  padding: 10px;
-}
-
-mat-checkbox {
+input, mat-checkbox {
   padding: 10px;
 }
 
