@@ -1,0 +1,45 @@
+<!-- O ngIf trabalha com a existência ou não de um determinado componente relacionado com uma expressão lógica
+se essa expressão lógica for verdadeira então esse componente vai existir e se ela for falsa não vai existir
+Então o componente será criado de acordo com alguma expressão lógica-->
+
+<mat-card>
+  <mat-card-title>
+    Select
+  </mat-card-title>
+
+  <mat-card-content>
+    <section>
+      <p>Select the filds you need:</p>
+      <section>
+        <mat-checkbox [(ngModel)]="showName" name="showName">Name</mat-checkbox>
+        <mat-checkbox [(ngModel)]="showAddres" name="showAddres">Addres</mat-checkbox>
+        <mat-checkbox [(ngModel)]="showPhone" name="showPhone">Phone</mat-checkbox>
+        <mat-checkbox [(ngModel)]="showAge" name="showAge">Age</mat-checkbox>
+      </section>
+    </section>
+
+    <br><br>
+
+    <section>
+      <mat-form-field *ngIf="showName">
+        <input matInput placeholder="name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Address">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Phone">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Age" type="number">
+      </mat-form-field>
+    </section>
+  </mat-card-content>
+
+  <mat-card-footer>
+
+  </mat-card-footer>
+</mat-card>
