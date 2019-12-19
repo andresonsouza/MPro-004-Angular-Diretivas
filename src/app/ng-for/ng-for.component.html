@@ -1,0 +1,16 @@
+<p *ngFor="let name of names"> {{ name }} </p> <!-- Criando um loop em cima do array nomes -->
+<p *ngFor="let name of names; let i=index"> {{ i }} {{ name }} </p>
+<!-- Criar uma variável index dentro do ngFor para armazenar o index -->
+
+<mat-card>
+  <mat-card-content>
+    <mat-selection-list #selectedNames>
+      <mat-list-option *ngFor="let name of names" color="primary"> {{ name }} </mat-list-option>
+    </mat-selection-list>
+  </mat-card-content>
+  <mat-card-footer>
+    <p>
+Options selected: {{ selectedNames.selectedOptions.selected.length }}
+    </p>
+  </mat-card-footer>
+</mat-card>
