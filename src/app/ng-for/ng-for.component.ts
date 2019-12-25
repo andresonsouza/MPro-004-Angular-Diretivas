@@ -8,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class NgForComponent implements OnInit {
 
   names = ['Acsa', 'Adriele', 'Loide', 'Vagdon', 'Andreson', 'Naguiza', 'Ismael'];
+  cities = [
+    { name: 'Paudalho', state: 'PE'},
+    { name: 'Carpina', state: 'PE' },
+    { name: 'Limoeiro', state: 'PE' },
+    { name: 'Recife', state: 'PE' }
+  ];
 
   constructor() { }
 
